@@ -12,10 +12,22 @@ virtualenv flask
 cd flask
 ```
 4. Activate the virtualenv
-
 ``` 
 source bin/activate
 ```
 
 * Check pip for the package if not:
   ``` pip install virtualenv ```
+6. Install Flask
+```
+pip install flask
+```
+7. Navigate to ``` data-commons ```
+```
+cd
+cd data-commons
+```
+8. Run the app.py
+```
+python -m flask run
+```
