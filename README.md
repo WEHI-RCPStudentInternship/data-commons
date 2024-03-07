@@ -11,4 +11,9 @@ virtualenv flask
 ```
 cd flask
 ```
+4. Activate the virtualenv
 
+``` source bin/activate ```
+
+* Check pip for the package if not:
+  ``` pip install virtualenv ```
