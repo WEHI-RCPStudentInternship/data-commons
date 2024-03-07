@@ -31,3 +31,4 @@ cd data-commons
 ```
 python -m flask run
 ```
+9. Go to http://127.0.0.1:5000/ to load the website
