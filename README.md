@@ -18,13 +18,15 @@ source bin/activate
 
 * Check pip for the package if not:
   ``` pip install virtualenv ```
+
 6. Install Flask
 ```
 pip install flask
 ```
+# Can skip to here if flask is installed and no issue with flask path/ no need to set up virtual env
+
 7. Navigate to ``` data-commons ```
 ```
-cd
 cd data-commons
 ```
 8. Run the app.py
