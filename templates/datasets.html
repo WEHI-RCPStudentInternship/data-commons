@@ -53,6 +53,30 @@ body {
             align-items: center;
             gap: 30px;
         }
+
+        h2 {
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-weight: 300;
+        }
+
+        .table_titles{
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-left: 150px;
+            margin-right: 150px;
+            margin-top: 150px;
+        }
+
+        .entries {
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-weight: lighter;
+        }
+
+        th, td {
+            padding: 5px;
+        }
+
     </style>
 </head>
 <body>
@@ -73,5 +97,36 @@ body {
             <img src="/asset/hamburger-menu-5.png" width=40px">
         </div>
     </header>
+
+    <div class="table_titles">
+        <h2>All Datasets</h2>
+        <h2>Filters</h2>
+    </div>
+
+    <table>
+        <tbody>
+            <tr class="entries">
+                <th class ="id">PDC001</th>
+                <td class = "summary">Whole-genome landscape of pancreatic neuroendocrine tumours - WGS</td>
+            </tr>
+            <tr class="entries">
+                <th class ="id">PDC002</th>
+                <td class = "summary">Whole-genome landscape of pancreatic neuroendocrine tumours - Lattice Light Sheet</td>
+            </tr>
+            <tr class="entries">
+                <th class ="id">PDC003</th>
+                <td class = "summary">DAXX/ARTX, MEN1, and mTOR pathway genes are frequently altered in pancreatic neuroendocrine tumours</td>
+                <td class = filter></td>
+            </tr>
+            <tr class="entries">
+                <th class ="id">PDC004</th>
+                <td class = "summary">Lung adenocarcinoma and mesothelioma DNA methylation</td>
+            </tr>
+            <tr class="entries" id="new">
+                <th class ="id">PDC005</th>
+                <td class = "summary">Whole-genome landscape of pancreatic neuroendocrine tumours - Spacial Omics Visium</td>
+            </tr>
+        </tbody>
+    </table>
 </body>
 </html>
