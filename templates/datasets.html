@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-body {
+        body {
             margin: 0;
         }
 
@@ -59,13 +59,18 @@ body {
             font-weight: 300;
         }
 
+        .container {
+            display: flex;
+            /*justify-content: space-around;*/
+        }
+
         .table_titles{
             display: flex;
             justify-content: space-between;
             align-items: flex-start;
-            margin-left: 150px;
-            margin-right: 150px;
-            margin-top: 150px;
+            padding-left: 150px;
+            padding-right: 150px;
+            padding-top: 150px;
         }
 
         .entries {
@@ -74,7 +79,7 @@ body {
         }
 
         table {
-            margin-left: 130px;
+            padding-left: 130px;
         }
 
         th, td {
@@ -118,35 +123,36 @@ body {
         <h2>All Datasets</h2>
         <h2>Filters</h2>
     </div>
-
-    <table>
-        <tbody>
-            <tr class="entries">
-                <th class ="id">PDC001</th>
-                <td class = "summary">Whole-genome landscape of pancreatic neuroendocrine tumours - WGS</td>
-                <td><button>VIEW</button></td>
-            </tr>
-            <tr class="entries">
-                <th class ="id">PDC002</th>
-                <td class = "summary">Whole-genome landscape of pancreatic neuroendocrine tumours - Lattice Light Sheet</td>
-                <td><button>VIEW</button></td>
-            </tr>
-            <tr class="entries">
-                <th class ="id">PDC003</th>
-                <td class = "summary">DAXX/ARTX, MEN1, and mTOR pathway genes are frequently altered in pancreatic neuroendocrine tumours</td>
-                <td><button>VIEW</button></td>
-            </tr>
-            <tr class="entries">
-                <th class ="id">PDC004</th>
-                <td class = "summary">Lung adenocarcinoma and mesothelioma DNA methylation</td>
-                <td><button>VIEW</button></td>
-            </tr>
-            <tr class="entries" id="new">
-                <th class ="id">PDC005</th>
-                <td class = "summary">Whole-genome landscape of pancreatic neuroendocrine tumours - Spacial Omics Visium</td>
-                <td><button>VIEW</button></td>
-            </tr>
-        </tbody>
-    </table>
+    <div class="container">
+        <table>
+            <tbody>
+                <tr class="entries">
+                    <th class ="id">PDC001</th>
+                    <td class = "summary">Whole-genome landscape of pancreatic neuroendocrine tumours - WGS</td>
+                    <td><button>VIEW</button></td>
+                </tr>
+                <tr class="entries">
+                    <th class ="id">PDC002</th>
+                    <td class = "summary">Whole-genome landscape of pancreatic neuroendocrine tumours - Lattice Light Sheet</td>
+                    <td><button>VIEW</button></td>
+                </tr>
+                <tr class="entries">
+                    <th class ="id">PDC003</th>
+                    <td class = "summary">DAXX/ARTX, MEN1, and mTOR pathway genes are frequently altered in pancreatic neuroendocrine tumours</td>
+                    <td><button>VIEW</button></td>
+                </tr>
+                <tr class="entries">
+                    <th class ="id">PDC004</th>
+                    <td class = "summary">Lung adenocarcinoma and mesothelioma DNA methylation</td>
+                    <td><button>VIEW</button></td>
+                </tr>
+                <tr class="entries" id="new">
+                    <th class ="id">PDC005</th>
+                    <td class = "summary">Whole-genome landscape of pancreatic neuroendocrine tumours - Spacial Omics Visium</td>
+                    <td><button>VIEW</button></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
 </body>
 </html>
