@@ -16,6 +16,8 @@
             align-items: center;
             padding-left: 50px;
             padding-right: 50px;
+            padding-top: 5px;
+            padding-bottom: 5px;
             border: 1px solid rgb(221 221 221);
             background-color: white;
         }
@@ -55,6 +57,62 @@
             gap: 30px;
         }
 
+        .middle {
+            display: flex;
+            justify-content: center;
+            margin-left: 100px;
+            margin-right: 100px;
+            gap: 10px;
+        }
+
+        h2 {
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-weight: 400;
+            padding-top: 50px;
+            font-size: 1.5em;
+        }
+
+        .summary {
+            display: box;
+            margin-right: 100px;
+            text-align: justify;
+            word-wrap: break-word;
+            width:fit-content;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+
+        .hyperlinks{
+            padding-top: 120px;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-weight: 300;
+        }
+
+        h4 {
+            font-weight: lighter;
+        }
+
+        button {
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-weight: lighter;
+            font-size: medium;
+            border-radius: 12px;
+            padding-left: 20px;
+            padding-right: 20px;
+            margin: 5px;
+            border: solid grey 1px;
+            color: black;
+            background-color: white;
+        }
+
+        #aquila {
+            background-color: cadetblue;
+            color: aliceblue;
+        }
+        
+        th, td {
+            padding-right: 10px;
+        }
+
     </style>
 </head>
 <body>
@@ -75,10 +133,10 @@
             <img src="/asset/hamburger-menu-5.png" width=40px">
         </div>
     </header>
-    <h2>Whole-genome landscape of pancreatic neuroendocrine tumours - Spatial Omics Visium</h2>
 
     <div class="middle">
         <div class="summary">
+            <h2>Whole-genome landscape of pancreatic neuroendocrine tumours - Spatial Omics Visium</h2>
             <h3>PDC0005</h3>
             <p>
                 The diagnosis of pancreatic neuroendocrine tumours (PanNETs) is increasing owing to more sensitive detection methods, 
@@ -97,11 +155,11 @@
             <h3>Raw Data</h3>
             <h4>Located: WEHI Milton/vast/projects/PDC0005</h4>
             <h3>Copy code for raw data</h3>
-            <a href=""><button>WEHI Jupyter Notebook</button></a>
-            <a href=""><button>Nextflow</button></a>
-            <a href=""><button>WEHI RStudio</button></a>
+            <a href=""><button class="code">WEHI Jupyter Notebook</button></a>
+            <a href=""><button class="code">Nextflow</button></a>
+            <a href=""><button class="code">WEHI RStudio</button></a>
             <h3>Data Portals</h3>
-            <a href=""><button>cBioPortal</button></a>
+            <a href="/aquila_portal.html"><button id="aquila">Aquila</button></a>
             
             <div class="linked_data">
                 <table>
