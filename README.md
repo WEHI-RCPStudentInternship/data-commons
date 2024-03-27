@@ -8,9 +8,10 @@ How to run the demo:
 pip install virtualenv
 virtualenv flask
 ```
-3. Navigate to flask
+
+3. Install Flask
 ```
-cd flask
+pip install flask
 ```
 4. Activate the virtualenv
 ``` 
@@ -20,9 +21,9 @@ source bin/activate
 * Check pip for the package if not:
   ``` pip install virtualenv ```
 
-5. Install Flask
+5. Navigate to flask
 ```
-pip install flask
+cd flask
 ```
 # Can skip to here if flask is installed and no issue with flask path/ no need to set up virtual env
 
