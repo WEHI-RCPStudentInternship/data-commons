@@ -5,6 +5,7 @@ How to run the demo:
 1. Clone this repository
 2. Set up virtual environment
 ```
+pip install virtualenv
 virtualenv flask
 ```
 3. Navigate to flask
