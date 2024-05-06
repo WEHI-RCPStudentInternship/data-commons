@@ -5,17 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-body {
+        body {
             margin: 0;
+            background-color:rgb(240, 240, 240);
         }
 
         header {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding-left: 50px;
-        padding-right: 50px;
-        border: 1px solid black;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-left: 50px;
+            padding-right: 50px;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            border: 1px solid rgb(221 221 221);
+            background-color: white;
         }
 
         .head {
@@ -24,16 +28,14 @@ body {
             align-items: center;
         }
 
-        h3 {
+        .head h3 {
             padding-left: 5em;
             font-family: Arial, Helvetica, sans-serif;
-            font-weight: lighter;
+            font-weight: 300;
         }
 
         .searchbox{
-            border-color: black;
-            border-style: solid;
-            border-width: 1px;
+            border: 1px solid grey;
             border-radius: 8px;
             padding-top: 7px;
             padding-bottom: 7px;
@@ -41,6 +43,7 @@ body {
             padding-right: 7px;
             font-family: Arial, Helvetica, sans-serif;
             font-weight: lighter;
+            color: grey;
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -53,6 +56,86 @@ body {
             align-items: center;
             gap: 30px;
         }
+
+        h2 {
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-weight: 300;
+        }
+
+        .container {
+            display: flex;
+            justify-content: space-around;
+            padding: 50px;
+        }
+
+        .info{
+            border-spacing: 0;
+            background-color: white;
+            box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5); 
+            border-radius: 3px;
+        }
+
+        caption {
+            text-align: left;
+            margin-left: 10px;
+            /*color:white;*/
+        }
+
+        .entries {
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-weight: lighter;
+        }
+
+        th, td {
+            padding: 10px;
+        }
+
+        .info th, .info td {
+            border-bottom: 1px solid rgb(221 221 221);
+        }
+
+        td>a>button {
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-weight: lighter;
+            font-size: medium;
+            border-radius: 12px;
+            padding-left: 20px;
+            padding-right: 20px;
+            border: solid rgb(52, 90, 90) 2px;
+            color: white;
+            background-color: darkslategray;
+            box-shadow: 1.2px 2.4px 2.4px hsl(0deg 0% 0% / 0.46);
+        }
+
+        td>a>button:hover {
+            background-color: darkseagreen;
+            border: solid darkseagreen 2px;
+        }
+
+        .fff a>button {
+            background-color: darkseagreen;
+            border: solid darkseagreen 2px;
+        }
+
+        .filters td>button {
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-weight: lighter;
+            font-size: medium;
+            border-radius: 12px;
+            padding-left: 20px;
+            padding-right: 20px;
+            border: solid grey 1px;
+            color: black;
+            background-color: white;
+            box-shadow: 1.2px 2.4px 2.4px hsla(0, 0%, 0%, 0.335); 
+        }
+
+        .filters td>button:hover {
+            background-color:darkslategray;
+            color: white;
+            box-shadow: 1.2px 2.4px 2.4px hsl(0deg 0% 0% / 0.335);
+        }
+
     </style>
 </head>
 <body>
@@ -61,7 +144,7 @@ body {
             <a href="https://www.wehi.edu.au/">
                 <img src="/asset/logo@2x-compressed.webp" width="114px" height="41px" alt="Logo" class="logo">
             </a>
-            <h3>Pancreatic Data Commons - Dataset Registry</h3>
+            <h3 class="head">Data Commons - Dataset Registry</h3>
         </div>
         
         <div class="icon_nav">
@@ -73,5 +156,46 @@ body {
             <img src="/asset/hamburger-menu-5.png" width=40px">
         </div>
     </header>
+
+    <div class="container">
+        <table class="info">
+            <caption><h2>All Datasets</h2></caption>
+            <tbody>
+                <tr class="entries">
+                    <th class ="id">PDC001</th>
+                    <td class = "summary">Whole-genome landscape of pancreatic neuroendocrine tumours - WGS</td>
+                    <td><a href="pdc001.html"><button>VIEW</button></a></td>
+                </tr>
+                <tr class="entries">
+                    <th class ="id">PDC002</th>
+                    <td class = "summary">Whole-genome landscape of pancreatic neuroendocrine tumours - Lattice Light Sheet</td>
+                    <td><a href=""><button>VIEW</button></a></td>
+                </tr>
+                <tr class="entries">
+                    <th class ="id">PDC003</th>
+                    <td class = "summary">DAXX/ARTX, MEN1, and mTOR pathway genes are frequently altered in pancreatic neuroendocrine tumours</td>
+                    <td><a href=""><button>VIEW</button></a></td>
+                </tr>
+                <tr class="entries">
+                    <th class ="id">PDC004</th>
+                    <td class = "summary">Lung adenocarcinoma and mesothelioma DNA methylation</td>
+                    <td><a href=""><button>VIEW</button></a></td>
+                </tr>
+                <tr class="entries" id="new">
+                    <th class ="id">PDC005</th>
+                    <td class = "summary">Whole-genome landscape of pancreatic neuroendocrine tumours - Spacial Omics Visium</td>
+                    <td><a href="pdc005.html"><button>VIEW</button></a></td>
+                </tr>
+            </tbody>
+        </table>
+        <table class="filters">
+            <caption><h2>Filters</h2></caption>
+            <tr><td><button>WGS</button></td></tr>
+            <tr><td><button>LLS</button></td></tr>
+            <tr><td><button>Spatial</button></td></tr>
+            <tr><td><button>Methyl</button></td></tr>
+            <tr><td><button>miRNA</button></td></tr>
+        </table>
+    </div>
 </body>
 </html>

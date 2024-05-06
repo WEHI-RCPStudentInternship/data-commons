@@ -7,6 +7,7 @@
     <style>
         body {
             margin: 0;
+            background-image: url("/asset/illustration.png");
         }
 
         header {
@@ -15,7 +16,10 @@
         align-items: center;
         padding-left: 50px;
         padding-right: 50px;
-        border: 1px solid black;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        border: 1px solid rgb(221 221 221);
+        background-color: white;
         }
 
         .head {
@@ -24,16 +28,15 @@
             align-items: center;
         }
 
-        h3 {
+        .head h3 {
             padding-left: 5em;
             font-family: Arial, Helvetica, sans-serif;
-            font-weight: lighter;
+            font-weight: 300;
+            color: white;
         }
 
         .searchbox{
-            border-color: black;
-            border-style: solid;
-            border-width: 1px;
+            border: 1px solid grey;
             border-radius: 8px;
             padding-top: 7px;
             padding-bottom: 7px;
@@ -41,6 +44,7 @@
             padding-right: 7px;
             font-family: Arial, Helvetica, sans-serif;
             font-weight: lighter;
+            color: grey;
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -60,19 +64,22 @@
             font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
             font-weight: 500;
             font-size: 40px;
+            color: white;
         }
         h4 {
             text-align: center;
             font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
             font-weight: 400;
             margin-bottom: 70px;
+            color: white;
         }
 
         label {
             display: block;
             font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
             margin-bottom: 10px;
-            font-weight: lighter;
+            font-weight: 300;
+            color: white;
         }
 
         .login {
@@ -82,6 +89,9 @@
 
         input {
             padding: 10px;
+            box-shadow: inset 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
+            border: none;
+            border-radius: 5px;
         }
 
         .input {
@@ -99,6 +109,11 @@
             font-weight: lighter;
             border-radius: 8px;
             border: none;
+            box-shadow: 1.2px 2.4px 2.4px hsl(0deg 0% 0% / 0.46);
+        }
+
+        #login_button:hover {
+            background-color: darkseagreen;
         }
 
     </style>
@@ -109,7 +124,7 @@
             <a href="https://www.wehi.edu.au/">
                 <img src="/asset/logo@2x-compressed.webp" width="114px" height="41px" alt="Logo" class="logo">
             </a>
-            <h3>Pancreatic Data Commons - Dataset Registry</h3>
+            <h3 class="head">Data Commons - Dataset Registry</h3>
         </div>
         
         <div class="icon_nav">
@@ -122,7 +137,7 @@
         </div>
     </header>
 
-    <h1>Login to the Pancreatic Data Commons</h1>
+    <h1>Login to the Data Commons</h1>
     <h4>Sign in to continue</h4>
 
     <div class="login">
@@ -132,7 +147,7 @@
         </div>
         <div class="input">
             <label for="password">PASSWORD</label>
-            <input type="text" required minlength="8" maxlength="16" size="40">
+            <input type="password" required minlength="8" maxlength="16" size="40">
         </div>
 
         <a href="datasets.html"><button id="login_button">login</button></a>
